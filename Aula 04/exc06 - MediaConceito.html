@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Calcular Média</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    Primeira nota <input id="n1" type="number" min="0" max="10"> <br />
+   Segunda  nota <input id="n2" type="number" min="0" max="10" > <br />
+   Terceira nota <input id="n3" type="number" min="0" max="10"> <br />
+   <button type="button" onclick="Calcularmedia()">Ver Nota</button>
+     <script>
+
+function Calcularmedia(media, n1, n2, n3) {
+  
+var n1 = Number(document.getElementById("n1").value);
+     var n2 = Number(document.getElementById("n2").value);
+        var n3 = Number(document.getElementById("n3").value);
+    var media = ""
+
+ media = ((n1+n2+n3) / 3);
+
+  if (media >=0,0 && media <=4,9) {
+       alert("D")
+            } else if  (media >=5,0 && media <=6,9) {
+       alert("C")
+            } else if  (media >=7,0 && media <=8,9) {
+       alert("B")
+      
+      } else (media >=9,0 && media <=10,0) 
+       alert("A")
+      
+      }
+ 
+
+
+
+
+     </script>
+
+
+  
+  
+  </head>
+  <body>
+
+  </body>
+</html>

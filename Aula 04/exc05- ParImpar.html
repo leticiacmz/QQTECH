@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Positivo ou Negativo</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     <input id="numero" type="number" placeholder="Digite um numero"> <br />
+   <button type="button" onclick="ParImpar()">Verificar</button>
+  
+    <p>verifique se o numero é par ou impar</p>
+     <script>
+
+        function ParImpar(numero){
+       var numero = document.getElementById("numero").value
+      if(numero%2 == 0){
+    alert("Par");
+    
+}
+ else {
+   alert ( "Impar" );
+}
+        }   
+     </script>
+
+
+  
+  
+  </head>
+  <body>
+
+  </body>
+</html>
