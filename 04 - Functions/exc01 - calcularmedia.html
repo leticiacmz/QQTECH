@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Calcular Média</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     Método de calculo <input id="letra" type="text"> <br />
+    Primeira nota <input id="n1" type="number" > <br />
+   Segunda  nota <input id="n2" type="number" > <br />
+   Terceira nota <input id="n3" type="number"> <br />
+   <button type="button" onclick="Calcularmedia()">Calcular Media</button>
+     <script>
+
+function Calcularmedia(letra, n1, n2, n3) {
+  
+
+   var letra = document.getElementById("letra").value;
+var n1 = Number(document.getElementById("n1").value);
+     var n2 = Number(document.getElementById("n2").value);
+        var n3 = Number(document.getElementById("n3").value);
+    var media = ""
+
+
+  if (letra == "a") {
+    
+media = ((n1+n2+n3) / 3);
+   alert(media)
+   return media
+      } 
+  else if  (letra == "p")
+  {
+   media = ((n1*5 + n2*3 + n3*2) / 10); 
+      alert(media)  
+      return media
+  } else (letra == "h") 
+  {
+media = (3/(1/n1+ 1/n2 + 1/n3));
+ alert(media) 
+ return media
+  }
+ }
+
+
+
+
+     </script>
+
+
+  
+  
+  </head>
+  <body>
+  <p>Escolha qual metodo de calculo da média</p>
+  <p>A = Média Aritimética P = Média Ponderada H = Média Harmonica<p>
+ 
+  </body>
+</html>
