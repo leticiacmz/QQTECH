@@ -3,7 +3,7 @@ create schema lojas_abc;
 create table lojas_abc.cliente(
 		id_cliente serial not null,
 		nome_completo varchar(80) not null,
-		data_nascimento varchar(10) not null,
+		data_nascimento date not null,
 		cpf varchar(11) not null,
 		origem varchar(50),
 		score int, 
@@ -56,10 +56,10 @@ create table lojas_abc.item_pedido_venda(
 
 
 insert into lojas_abc.cliente(nome_completo, data_nascimento, cpf, origem, score)
-values ('Yaqi Parente Abasto', '2002.05.23', '52045741583', 'Site', '86'), ('Iago Campos Faleiro', '1985.04.02', '79313214725', 'Site', '36'),
-('Elizabeth Melo Girão', '10.08.2005', '08038416473', 'Site', '29'), ('Muriel Mondragão Vilarinho', '28.03.1952', '26444024765', 'Loja', '84'),
-('Ananda Doutel Veiga', '03.10.1960', '47040162695', 'Loja', '53'), ('Francis Ruas Borba', '08.09.1976', '92389587267', 'Loja', '92'), ('Isis Cirne Veleda', '07.07.1995', '12644213460', 'Site', '90'),
-('Grace Custódio Caires', '14.08.2002', '15151806033', 'Site', '48'), ('Antoine Paredes Fazendeiro', '12.11.2004', '30856537756', 'Loja', '42'), ('Davide Belém Imperial', '24.12.1990', '63706347431', 'Site', '69');
+values ('Yaqi Parente Abasto', '2002-05-23', '52045741583', 'Site', '86'), ('Iago Campos Faleiro', '1985-04-02', '79313214725', 'Site', '36'),
+('Elizabeth Melo Girão', '2005-08-10', '08038416473', 'Site', '29'), ('Muriel Mondragão Vilarinho', '1952-03-28', '26444024765', 'Loja', '84'),
+('Ananda Doutel Veiga', '1960-10-03', '47040162695', 'Loja', '53'), ('Francis Ruas Borba', '1976-09-08', '92389587267', 'Loja', '92'), ('Isis Cirne Veleda', '1995-07-07', '12644213460', 'Site', '90'),
+('Grace Custódio Caires', '2002-08-14', '15151806033', 'Site', '48'), ('Antoine Paredes Fazendeiro', '2004-11-12', '30856537756', 'Loja', '42'), ('Davide Belém Imperial', '1990-12-24', '63706347431', 'Site', '69');
 
 insert into lojas_abc.categoria(nome_categoria)
 values ('Construção'), ('Móveis'), ('Celulares'), ('Eletrodomésticos');
@@ -138,8 +138,6 @@ where id_categoria = 2 and valor_produto >= 5000 and valor_produto < 7500
 update lojas_abc.produto
 set valor_produto = valor_produto * 0.96
 where valor_produto > 7600  and valor_produto < 700
-
-
 
 
 
