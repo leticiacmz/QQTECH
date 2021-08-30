@@ -1,0 +1,11 @@
+Busca 2 definições de cada tag de fontes diferentes
+
+html
+head
+title
+meta
+body
+h
+ul
+img
+p
