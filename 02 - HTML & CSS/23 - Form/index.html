@@ -1,0 +1,136 @@
+<hmtl>
+
+  <head>
+      <title>QQ Tech</title>
+      <meta charset="utf-8">
+     
+  </head>
+
+  <body>
+      <form action="cadastro.html" method="GET">
+          <fieldset>
+              <legend>QQ Tech</legend>
+              <div>
+                  <label>Nome:</label>
+                  <input type="text" required/>
+              </div>
+              <br>
+              <div>
+                <label>Sobrenome:</label>
+                <input type="text" required/>
+            </div>
+              <br>
+              <div class="email" id="email">
+                  <label>E-mail</label>
+                  <input type="email" required/>
+              </div>
+              <br>
+              <div class="cpf/cnpj" id="cpf/cnpj">
+                <label>CPF/CNPJ</label>
+                <input type="number"required />
+            </div>
+            <br>
+            <label for="tipo">Tipo:</label>
+            <div>
+                <input type="radio" id="pes"  value="Pessoa">
+                <label for="pes">Pessoa</label>
+                <br>
+                <input type="radio" id="emp"  value="Empresa">
+                <label for="emp">Empresa</label>
+            </div>
+            <br>
+            <label for="sexo">Sexo:</label>
+              <div>
+                  <input type="radio" id="fem" name="sexo_lan" value="Feminino">
+                  <label for="fem">Feminino</label>
+                  <br>
+                  <input type="radio" id="mas" name="sexo_lan" value="Masculino">
+                  <label for="mas">Masculino</label>
+              </div>
+              <br>
+            <div class="dataNas">
+              <label>Data de Nascimento: </label>
+              <input type="date" required>
+            </div>
+            <br>
+            <div class="telefone">
+              <label>Telefone: </label>
+              <input type="tel" required>
+            </div>
+            <br>
+            <div>
+              <label>Aceita receber novidades?</label>
+              <input type="checkbox" required>
+          </div>
+          <br>
+            <div class="cep">
+              <label>CEP: </label>
+              <input type="number" required>
+            </div>
+            <br>
+            <div class="rua">
+              <label>Rua: </label>
+              <input type="text" required>
+            </div>
+            <br>
+            <div class="num">
+              <label>Numero: </label>
+              <input type="number" required>
+            </div>
+            <br>
+            <div class="cidade">
+              <label>Cidade: </label>
+              <input type="text" required>
+            </div>
+              <br>
+              <div>
+                  <label for="estado_group">Estado:</label>
+                  <select>
+                      <optgroup label="Sul">
+                          <option value="RS">RS</option>
+                          <option value="SC">SC</option>
+                          <option value="PR">PR</option>
+                      </optgroup>
+                      <optgroup label="Sudeste">
+                          <option value="SP">SP</option>
+                          <option value="RJ">RJ</option>
+                          <option value="MG">MG</option>
+                          <option value="ES">ES</option>
+                      </optgroup>
+                      <optgroup label="Centro-Oeste">
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="GO">GO</option>
+                    </optgroup>
+                      <optgroup label="Norte">
+                          <option value="AM">AM</option>
+                          <option value="PA">PA</option>
+                          <option value="RR">RR</option>
+                          <option value="AP">AP</option>
+                          <option value="TO">TO</option>
+                          <option value="RO">RO</option>
+                          <option value="AC">AC</option>
+                      </optgroup>
+                      <optgroup label="Nordeste">
+                        <option value="MA">MA</option>
+                        <option value="PI">PI</option>
+                        <option value="CE">CE</option>
+                        <option value="RN">RN</option>
+                        <option value="PE">PE</option>
+                        <option value="PB">PB</option>
+                        <option value="SE">SE</option>
+                        <option value="AL">AL</option>
+                        <option value="BA">BA</option>
+                    </optgroup>
+                  </select>
+              </div>
+              <br>
+              
+      
+                  <button type="submit">Cadastrar</button>
+                  
+              </div>
+          </fieldset>
+      </form>
+  </body>
+</hmtl>
