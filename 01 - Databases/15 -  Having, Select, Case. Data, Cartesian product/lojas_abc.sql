@@ -122,8 +122,21 @@ select nome_completo, score, data_nascimento,
  where score > 60
 
 --exc 09
+ 
 select id_pedido, data_pedido,
 avg(id_pedido) as media_pedidos
 from lojas_abc.pedido 
 where data_pedido > '2021-01-01' and data_pedido < '2021-05-01'
 group by id_pedido 
+
+
+
+----Aula 07---- 
+
+--exc 01
+
+alter table lojas_abc.item_pedido_venda
+
+add constraint nome_fk foreign key(nome_produto) references lojas_abc.produto(nome_produto)
+	
+	
