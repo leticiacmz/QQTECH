@@ -1,0 +1,33 @@
+﻿exc 01
+
+select c.nome_completo as tds_nomes_registro from lojas_abc.cliente c 
+union all 
+select v.nome_vendedor
+ from lojas_abc.vendedor v 
+
+exc 02 
+
+select cat.nome_categoria,	sum(ipv.valor_produto) as total_vendido from lojas_abc.categoria cat
+inner join lojas_abc.produto prod on cat.id_categoria = prod.id_categoria
+inner join lojas_abc.item_pedido_venda ipv on prod.id_produto = ipv.id_produto
+inner join lojas_abc.pedido ped on ipv.id_pedido = ped.id_pedido
+where cat.nome_categoria = 'Celulares' and (extract(year
+
+	from
+
+		ped.data_pedido) between '2017' and '2020') or cat.nome_categoria = 'Eletrodomésticos' and (extract(year from ped.data_pedido)between '2018' and '2021')
+group by cat.nome_categoria
+
+exc 03 
+select ped.id_pedido, prod.nome_produto, sum(ipv.valor_produto) as valor_vendido
+from lojas_abc.pedido ped 
+left join lojas_abc.item_pedido_venda ipv on ped.id_pedido = ipv.id_pedido
+left join lojas_abc.produto prod on ipv.id_produto = prod.id_produto
+where (extract(year from ped.data_pedido) = '2020') or (extract(year from ped.data_pedido) > '2018') and ipv.valor_produto > 2999.99
+group by ped.id_pedido, prod.nome_produto
+
+exc 04 
+
+select c.nome_completo, c.score, (case score::boolean when score > 80 then 'ouro' when score > 60 and score < 79 then 'prata' else 'bronze' end) as medalha from lojas_abc.cliente c
+where score> 80 or score <59
+order by medalha, c.nome_completo
