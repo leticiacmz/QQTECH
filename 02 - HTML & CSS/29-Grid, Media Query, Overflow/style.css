@@ -1,0 +1,68 @@
+.container {
+  margin: 5rem;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 0.2fr 0.3fr 0.2fr 0.2fr;
+  grid-template-areas:
+    "header header header header header"
+    "nav main main main aside"
+    "nav main main main aside"
+    "footer footer footer footer footer";
+  grid-gap: 1rem;
+  font-size: 40px;
+}
+
+header {
+  background: aqua;
+  grid-area: header;
+  border: solid 3px;
+}
+
+nav {
+  background: rgb(255, 0, 0); /* vermelho */
+  grid-area: nav;
+  border: solid 3px;
+}
+
+main {
+  background: rgb(72, 255, 0);
+  grid-area: main;
+  border: solid 3px;
+
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+aside {
+  background: rgb(255, 0, 140);
+  grid-area: aside;
+  margin-right: 20px;
+  border: solid 3px;
+}
+
+footer {
+  background: rgb(251, 255, 0);
+  grid-area: footer;
+  border: solid 3px;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 450px) {
+  .container {
+    margin: 1rem;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+
+  main {
+    font-size: 2rem;
+  }
+  aside {
+    margin-right: 0px;
+  }
+}
