@@ -10,7 +10,7 @@ const b = 1;
 
 //Resposta 3.2 = fazendo comparação atraves do seu tipo, cai no else
 
-if (a == typeof b) {
+if (a === b) {
   console.log("cai aqui no IF?");
 } else {
   console.log("ou cai aqui no ELSE?");
