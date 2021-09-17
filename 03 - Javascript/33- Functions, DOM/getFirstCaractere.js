@@ -1,13 +1,13 @@
-const a = "Lojas Quero-Quero";
+let a = "Lojas Quero-Quero";
+
+function findFirstCarectere() {
+  let firstCaractere = getFirstCaractere(a);
+
+  function getFirstCaractere() {
+    const firstCaractere = a.charAt(0);
+    return firstCaractere;
+  }
+  console.log("A PRIMEIRA LETRA É " + firstCaractere);
+}
 
 findFirstCarectere(a);
-
-function findFirstCarectere(a) {
-  const firstCaractere = getFirstCaractere(a);
-
-  console.log("A PRIMEIRA LETRA É " + firstCaractere);
-
-  function getFirstCaractere(a) {
-    const result = a.charAt(0);
-  }
-}
