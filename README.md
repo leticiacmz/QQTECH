@@ -1,12 +1,12 @@
 # QQTECH 💻
 
-Exercises of the QQTECH project classes created by Lojas Quero-Quero as preparation and training of development trainees
+Lista de exercícios feitos em aula durante o programa de formação da empresa Lojas quero-quero para iniciação e contratação de novos estagiários. 
 
-❗ Logic Programming 
+❗ Logica de programação
 
-❗ Object-Oriented Programming - OOP
+❗ Programação orientada a objetos - POO
 
-❗ Databases - PostgreSQL
+❗ Banco de dados - PostgreSQL
 
 ❗ HTML/CSS
 
