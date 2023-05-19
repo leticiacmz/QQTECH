@@ -1,16 +1,16 @@
-# QQTECH 💻
+# QQTECH 💻🚧
 
-Lista de exercícios feitos em aula durante o programa de formação da empresa Lojas quero-quero para iniciação e contratação de novos estagiários. 
+List of exercises carried out in class during the training program of the company Lojas Quero-Quero for initiating and hiring new interns.
 
-❗ Logica de programação
+❗ Programming logic
 
-❗ Programação orientada a objetos - POO
+❗ Object Oriented Programming - OOP
 
-❗ Banco de dados - PostgreSQL
+❗ Database - PostgreSQL
 
-❗ HTML/CSS
+❗HTML/CSS
 
-❗ Javascript
+❗Javascript
 
 ❗ NodeJS
 
